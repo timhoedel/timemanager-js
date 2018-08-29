@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeitmanager</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <button data-time="300" class="timer__button">5 min</button>
+      <button data-time="900" class="timer__button">15 min</button>
+      <button data-time="1800" class="timer__button">30 min</button>
+      <button class="stop">Stop</button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" class="text2" placeholder="x min">
+      </form>
+    </div>
+    <div class=text-content">
+        <h2 class="text">Zeitmanager</h2>
+    </div>
+    <div class="display">
+      <h1 class="display__time-left"></h1>
+      <p class="display__end-time"></p>
+    </div>
+  </div>
+
+  <audio data-key="1" src="sounds/end.wav"></audio>;
+
+  <script src="script.js"></script>
+</body>
+</html>
