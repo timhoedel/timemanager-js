@@ -39,9 +39,8 @@ function displayTimeLeft(seconds) {
 function displayEndTime(timestamp) {
   const end = new Date(timestamp);
   const hour = end.getHours();
-  //onst adjustedHour = hour > 12 ? hour - 12 : hour;
   const minutes = end.getMinutes();
-  endTime.textContent = `Endet um ${hour}:${minutes < 10 ? '0' : ''}${minutes} Uhr`;
+  endTime.textContent = `Ends on ${hour}:${minutes < 10 ? '0' : ''}${minutes}`;
 }
 
 function startTimer() {
